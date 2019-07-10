@@ -28,7 +28,8 @@ class ToDoListVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath.row)
+        tableView.deselectRow(at: indexPath, animated: true)
+        print(itemArray[indexPath.row])
     }
 
     
