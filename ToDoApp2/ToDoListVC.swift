@@ -41,6 +41,14 @@ class ToDoListVC: UITableViewController {
         // print(itemArray[indexPath.row])
     }
 
+    @IBAction func addButtonPressed(_ sender: Any) {
+        let alert = UIAlertController(title: "Add New To Do List Item", message: "", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            print("Success")
+        }
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
     
 }
 
