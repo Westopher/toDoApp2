@@ -28,8 +28,6 @@ class ToDoListVC: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-        
         if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
             tableView.cellForRow(at: indexPath)?.accessoryType = .none
         } else {
@@ -37,8 +35,6 @@ class ToDoListVC: UITableViewController {
         }
         
         tableView.deselectRow(at: indexPath, animated: true)
-        
-        // print(itemArray[indexPath.row])
     }
 
     @IBAction func addButtonPressed(_ sender: Any) {
