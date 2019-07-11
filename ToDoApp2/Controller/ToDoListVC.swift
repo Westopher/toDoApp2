@@ -10,10 +10,23 @@ import UIKit
 
 class ToDoListVC: UITableViewController {
 
-    var itemArray = [item]()
+    var itemArray = [Item]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //make three new items
+        let newItem0 = Item()
+        newItem0.title = "Go running"
+        itemArray.append(newItem0)
+        
+        let newItem1 = Item()
+        newItem1.title = "Play soccer"
+        itemArray.append(newItem1)
+       
+        let newItem2 = Item()
+        newItem2.title = "lift weights"
+        itemArray.append(newItem2)
         
     }
     
