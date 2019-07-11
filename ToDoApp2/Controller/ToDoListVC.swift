@@ -10,7 +10,7 @@ import UIKit
 
 class ToDoListVC: UITableViewController {
 
-    var itemArray = ["Run", "Breakfast", "Code"]
+    var itemArray = [item]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
